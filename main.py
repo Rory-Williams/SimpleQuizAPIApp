@@ -3,6 +3,11 @@ from data import generate_questions
 from quiz_brain import QuizBrain
 from ui import UserInterface
 
+# quiz app used to generate 10 true/false questions from quiz api
+# questions presented with tkinter ui, score updated in real time
+# questions gathered from data code, stored in question model
+# quiz brain handles process flow and is called by ui
+
 question_data = generate_questions()
 question_bank = []
 for question in question_data:
